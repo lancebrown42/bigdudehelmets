@@ -30,6 +30,12 @@
                 }, { once: true });
             });
         }
+
+        var title = document.querySelector('h1');
+        title.addEventListener('click', () => {
+            audio.play();
+            audio.muted = false;
+        });
     </script>
 </body>
 </html>
