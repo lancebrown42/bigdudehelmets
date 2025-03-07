@@ -8,10 +8,28 @@
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <audio autoplay muted loop>
+        <source src="assets/leekspin.mp3" type="audio/mpeg">
+    </audio>
     <div id="container" class="row">
 
         <h1 #title class="blink_me center">It's not a porn site.</h1>
     </div>
-    
+    <script>
+        var audio = document.querySelector('audio');
+        var playPromise = audio.play();
+
+        if (playPromise !== undefined) {
+            playPromise.then(() => {
+                audio.muted = false;
+            }).catch(error => {
+                console.log('Autoplay was prevented, waiting for user interaction.');
+                document.addEventListener('click', () => {
+                    audio.play();
+                    audio.muted = false;
+                }, { once: true });
+            });
+        }
+    </script>
 </body>
 </html>

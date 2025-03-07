@@ -18,26 +18,6 @@ html {
     50% { color: blue; }
     100% { color: red; }
   }
-/* .center{
-    text-align: center;
-    margin-top: 50%;
-    margin-bottom: 50%;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    font-size: larger;
-
-} */
-/* #container {
-    justify-content: center; 
-    align-items: center;     
-    height: 10vh;
-    display:block;
-    display:table-cell;
-  }
-  #container h1 {
-    vertical-align:middle;
-    text-align:center;
-  } */
   body {
     display: grid;
     place-items: center;
