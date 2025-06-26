@@ -1,6 +1,6 @@
 html {
 
-    background-image: url('./assets/helmetbg.png');
+    background-image: url('/assets/helmetbg.png');
     background-repeat: repeat;   
 }
 .blink_me {
